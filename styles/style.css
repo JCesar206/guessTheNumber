@@ -1,0 +1,32 @@
+* { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+body { min-height: 100vh; display: flex; flex-direction: column; background-color: #f0f4f8; color: #333; }
+.container { flex: 1; padding: 20px; max-width: 500px; margin: auto; text-align: center; }
+h1, h2 { color: #000844; text-shadow: 4px 4px 4px rgba(51,193,255,0.5); text-align: center; }
+#styleP { color: darkblue; font-weight: bold; }
+input {
+    padding: 10px; width: 80%; max-width: 300px; background-color: #cff1fa; 
+    color: #000844; font-weight: bold; margin: 10px 0; border-radius: 10px; 
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px; border: none; background-color: #008f1e; color: #fff;
+    border-radius: 10px; cursor: pointer; margin-top: 10px; 
+}
+button:hover { background-color: #88fca1; color: #05b22a; font-weight: bold; }
+
+#message { margin: 15px 0; font-weight: bold; }
+#recordsTable { width: 100%; max-width: 600px; margin: 20px auto; border-collapse: collapse;
+text-align: center; font-size: 16px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+border-radius: 10px; overflow: hidden; }
+#recordsTable th, #recordsTable td { padding: 12px; border: 1px solid #ddd; }
+#recordsTable th { background-color: #f2f2f2;  font-weight: bold; }
+
+footer { background-color: #000844; color: #95a2ff; font-weight: bold;
+    text-align: center; padding: 10px 10px; margin-top: auto; }
+
+.redes a { color: white; margin: 0 10px; text-decoration: none; font-size: 14px; }
+.redes a:hover { color: #ae7efc; }
+.redes img { width: 26px; height: 26px; border-radius: 50%; }
+
+@media (max-width: 600px) { .container, table { width: 100%; } }

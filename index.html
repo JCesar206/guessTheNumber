@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adivina el Número</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/guess.jpg">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Adivina el Número</h1><br>
+    <p id="styleP">Estoy pensando en un número entre 1 y 100.</p>
+
+    <input type="number" id="guessInput" placeholder="Tu número" />
+    <p id="timer">Tiempo: 0 seg.</p>
+    <button onclick="checkGuess()">Intentar</button>
+    <p id="message"></p>
+    <p id="attempts"></p>
+    <button onclick="restartGame()" id="restartBtn">Reiniciar</button>
+  </div>
+  <h2>🏆 Tabla de Records</h2>
+  <table id="recordsTable">
+    <thead>
+        <tr>
+            <th>Intentos</th>
+            <th>Tiempo</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody id="recordsBody">
+    </tbody>
+  </table>
+  <footer>
+        <div class="redes">
+            <p>&copy; Guess The Number<br>Hecho con ❤️ por mi. 2025 Julio César Yañez M. Todos los derechos 
+                reservados.</p>   
+                <a href="mailto:jcesar206@hotmail.com">Email
+                    <img src="./images/iconHotmail.png" alt="Email">
+                </a>
+                <a href="https://github.com/JCesar206" target="_blank">GitHub
+                    <img src="./images/iconGitHub.jpg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/jcesar206" target="_blank">LinkedIn
+                    <img src="./images/iconLinkedIn.png" alt="LinkedIn">
+                </a>
+        </div>
+    </footer>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
